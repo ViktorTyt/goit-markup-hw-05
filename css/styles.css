@@ -103,6 +103,10 @@ body {
     line-height: 1.33;
     letter-spacing: 0.02em;
     color: var(--main-title-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link.current::after {
@@ -132,6 +136,11 @@ body {
     letter-spacing: 0.02em;
     color: var(--main-text-color);
     align-items: center;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .contacts-item:first-child {
     margin-right: 50px;
@@ -142,7 +151,7 @@ body {
 }
 .contacts-icon:hover,
 .contacts-icon:focus {
-    color:var(--text-accent)
+    /* color:var(--text-accent) */
     /* width: 10px;
     height: 16px; */
 }
@@ -207,6 +216,10 @@ body {
     border-radius: 4px;
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -353,6 +366,9 @@ body {
     align-items: center;
     justify-content: center;
     color: #AFB1B8;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social-icon {
     fill: currentColor;
@@ -386,6 +402,9 @@ body {
     justify-content: center;
     border: 1px solid#AFB1B8; 
     border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
@@ -400,10 +419,10 @@ body {
     color: var(--text-accent);
     border-color: var(--text-accent);
 }
-.clients-icon:hover,
+/* .clients-icon:hover,
 .clients-icon:focus {
     fill: var(--text-accent);
-}
+} */
 /* ---------------------------------------------------------------footer---------------------- */
 
 .footer {
@@ -436,6 +455,8 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-container {
     display: flex;
@@ -471,6 +492,8 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join-social-icon {
     fill: currentColor;
@@ -482,7 +505,6 @@ body {
 .join-social-link:hover,
 .join-social-link:focus {
     background-color:var(--text-accent);
-    color: var(--second-title-text-color);
 }
 /* ----------------------------------------------------------portfolio page---------------------------------------------- */
 
